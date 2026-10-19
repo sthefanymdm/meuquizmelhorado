@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz dos Animais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <h1>🐾 Quiz dos Animais</h1>
+        <p class="subtitulo">Teste seus conhecimentos sobre o mundo animal!</p>
+
+        <div id="quiz">
+            <div class="topo">
+                <span id="numero-pergunta">Pergunta 1 de 10</span>
+                <span id="pontuacao">Pontos: 0</span>
+            </div>
+
+            <div class="barra-container">
+                <div id="barra-progresso"></div>
+            </div>
+
+            <h2 id="pergunta">Pergunta aqui</h2>
+
+            <div id="opcoes"></div>
+
+            <button id="proxima" onclick="proximaPergunta()">
+                Próxima pergunta
+            </button>
+        </div>
+
+        <div id="resultado" class="resultado escondido">
+            <h2>🎉 Quiz terminado!</h2>
+
+            <p id="mensagem-final"></p>
+
+            <div class="pontuacao-final">
+                <span id="resultado-pontos"></span>
+            </div>
+
+            <button onclick="reiniciarQuiz()">
+                Jogar novamente
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
